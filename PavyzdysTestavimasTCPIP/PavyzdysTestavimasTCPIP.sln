@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.960
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PavyzdysTestavimasTCPIP", "PavyzdysTestavimasTCPIP\PavyzdysTestavimasTCPIP.csproj", "{CBCDF66E-5D54-4E88-846A-C663477CEF5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataPrep.UnitTest", "DataPrep.UnitTest\DataPrep.UnitTest.csproj", "{523D7EE8-153E-4409-90E6-18C3AF9D4A68}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBCDF66E-5D54-4E88-846A-C663477CEF5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBCDF66E-5D54-4E88-846A-C663477CEF5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBCDF66E-5D54-4E88-846A-C663477CEF5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBCDF66E-5D54-4E88-846A-C663477CEF5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{523D7EE8-153E-4409-90E6-18C3AF9D4A68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{523D7EE8-153E-4409-90E6-18C3AF9D4A68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{523D7EE8-153E-4409-90E6-18C3AF9D4A68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{523D7EE8-153E-4409-90E6-18C3AF9D4A68}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42DAE13C-3394-4DF1-AEBF-E38B37344851}
+	EndGlobalSection
+EndGlobal
