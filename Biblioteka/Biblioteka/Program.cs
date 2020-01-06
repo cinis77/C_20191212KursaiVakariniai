@@ -12,25 +12,39 @@ namespace Biblioteka
         [STAThread]
         private static void Main(string[] args)
         {
-            MessageBox.Show("Pasirinkite skaitytoju faila");
-            string skaitytojaiPath = null;
-            using (OpenFileDialog ofd = new OpenFileDialog())
+            try
             {
-                if (ofd.ShowDialog() == DialogResult.OK)
+                MessageBox.Show("Pasirinkite skaitytoju faila");
+                string skaitytojaiPath = null;
+                using (OpenFileDialog ofd = new OpenFileDialog())
                 {
-                    skaitytojaiPath = ofd.FileName;
+                    if (ofd.ShowDialog() == DialogResult.OK)
+                    {
+                        skaitytojaiPath = ofd.FileName;
+                    }
                 }
+                if (skaitytojaiPath == null)
+                {
+                    throw new Exception("Nepasirinktas skaitytojo kelias");
+                }
+                MessageBox.Show("Pasirinkite knygu faila");
+                string knygosPath = null;
+                using (OpenFileDialog ofd = new OpenFileDialog())
+                {
+                    if (ofd.ShowDialog() == DialogResult.OK)
+                    {
+                        knygosPath = ofd.FileName;
+                    }
+                }
+                ParseData(skaitytojaiPath, knygosPath);
             }
-            MessageBox.Show("Pasirinkite knygu faila");
-            string knygosPath = null;
-            using (OpenFileDialog ofd = new OpenFileDialog())
+            catch (ArgumentNullException ex)
             {
-                if (ofd.ShowDialog() == DialogResult.OK)
-                {
-                    knygosPath = ofd.FileName;
-                }
             }
-            ParseData(skaitytojaiPath, knygosPath);
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
         private static void ParseData(string skaitytojai, string knygos)
