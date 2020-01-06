@@ -12,6 +12,8 @@ namespace Biblioteka
         public DateTime PaėmimoData { get; set; }
         public DateTime GražinimoData { get; set; }
 
+        public int VartotojoID { get; set; }
+
         private bool KnygaPaimta = false;
     }
 }
