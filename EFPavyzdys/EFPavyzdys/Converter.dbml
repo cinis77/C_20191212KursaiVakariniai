@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DuomenuBaze" Class="ConverterDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DuomenuBaze.mdf;Integrated Security=True" SettingsObjectName="EFPavyzdys.Properties.Settings" SettingsPropertyName="DuomenuBazeConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Krepselis" Member="Krepselis">
+    <Type Name="Krepseli">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="VartotojoID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Busena" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Association Name="Krepseli_Preke" Member="Prekes" ThisKey="Id" OtherKey="KrepselioID" Type="Preke" />
+      <Association Name="User_Krepseli" Member="User" ThisKey="VartotojoID" OtherKey="Id" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Users" Member="Users">
+    <Type Name="User">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Vardas" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="User_Krepseli" Member="Krepselis" ThisKey="Id" OtherKey="VartotojoID" Type="Krepseli" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Prekes" Member="Prekes">
+    <Type Name="Preke">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="KrepselioID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Pavadinimas" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Kaina" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Svoris" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="Krepseli_Preke" Member="Krepseli" ThisKey="KrepselioID" OtherKey="Id" Type="Krepseli" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

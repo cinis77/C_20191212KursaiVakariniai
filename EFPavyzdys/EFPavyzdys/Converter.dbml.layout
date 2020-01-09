@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Converter">
+  <DataContextMoniker Name="/ConverterDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ab77da75-51d0-4c7a-837c-163edb51c127" absoluteBounds="4.5, 2.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/ConverterDataContext/Krepseli" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cbd0e1e9-72bd-45fd-90c8-4e0a0a6c98f4" absoluteBounds="4.5150000000000006, 2.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="04cc2935-75a8-4d26-ad73-0e5d56887d45" absoluteBounds="8.75, 1.25, 2, 1.3862939453125">
+      <DataClassMoniker Name="/ConverterDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a58e7a13-c578-44f4-8a2a-f12d98ea9f8f" absoluteBounds="8.765, 1.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.75 : 1.8749995); (5.5 : 1.8749995); (5.5 : 2.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ConverterDataContext/User/User_Krepseli" />
+      <nodes>
+        <classShapeMoniker Id="04cc2935-75a8-4d26-ad73-0e5d56887d45" />
+        <classShapeMoniker Id="ab77da75-51d0-4c7a-837c-163edb51c127" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="54ed20a8-5210-48a6-843a-f509c01d16d2" absoluteBounds="1.125, 2.625, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/ConverterDataContext/Preke" />
+      <nestedChildShapes>
+        <elementListCompartment Id="90e9811b-ed74-474a-8965-85e139bed6a8" absoluteBounds="1.1399999999999997, 3.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.5 : 3.25564697265625); (3.125 : 3.25564697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ConverterDataContext/Krepseli/Krepseli_Preke" />
+      <nodes>
+        <classShapeMoniker Id="ab77da75-51d0-4c7a-837c-163edb51c127" />
+        <classShapeMoniker Id="54ed20a8-5210-48a6-843a-f509c01d16d2" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
