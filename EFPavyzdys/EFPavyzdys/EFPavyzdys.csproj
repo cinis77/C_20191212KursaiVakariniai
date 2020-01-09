@@ -59,6 +59,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Converter.cs">
+      <DependentUpon>Converter.dbml</DependentUpon>
+    </Compile>
     <Compile Include="Converter.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
