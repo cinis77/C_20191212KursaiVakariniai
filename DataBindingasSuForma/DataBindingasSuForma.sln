@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.960
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBindingasSuForma", "DataBindingasSuForma\DataBindingasSuForma.csproj", "{CCDE7F4B-AA43-4371-AC4A-52557871C413}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCDE7F4B-AA43-4371-AC4A-52557871C413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCDE7F4B-AA43-4371-AC4A-52557871C413}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCDE7F4B-AA43-4371-AC4A-52557871C413}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCDE7F4B-AA43-4371-AC4A-52557871C413}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1FBCDA38-49D2-4EC5-B916-123A758ECB5B}
+	EndGlobalSection
+EndGlobal
